@@ -3,7 +3,7 @@ import datetime
 CONTROL_NUMBER = "279146358279"
 
 def check_cnp(cnp):
-    if not cnp.isdecimal() or len(cnp):
+    if not cnp.isdecimal() or len(cnp) != 13:
         print("Invalid cnp.")
         return -1
 
